@@ -14,7 +14,16 @@ body{
     background-position: top center;
     background-repeat: no-repeat;
 
-    outline-style: none;
+}
+
+.body-catalog,
+.body-catalog-item{
+    color: #000000;
+
+    background-color: #f8f5f2;
+    background-image: url("../img/bg-columns.jpg");
+    background-repeat: repeat;
+
 }
 
 .button{
@@ -33,6 +42,12 @@ body{
 .button:focus,
 .button:active{
     background-color: #663d15;
+}
+
+.button.button-active{
+    color: #000000;
+
+    background-color: #ffffff;
 }
 
 a{
@@ -192,11 +207,63 @@ a{
 }
 
 .restore{
-    text-decoration: underline;
+        text-decoration: underline;
     color: #000000;
 }
 
 .restore:hover,
 .restore:focus{
     text-decoration: none;
+}
+
+main ul{
+    list-style-type: none;
+}
+
+.breadcrumbs a,
+.breadcrumbs a:visited,
+.catalog-name-product:visited {
+    color: #000000;
+}
+
+.filters label:hover,
+.filters label:focus{
+    color: #663d15;
+}
+
+.catalog-item-price{
+    font-size: 14px;
+    line-height: 18px;
+
+    background-color: #e5e5e5;
+}
+
+.page-title{
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.catalog-category{
+    text-transform: none;
+}
+
+.breadcrumbs-current,
+.product-article{
+    color: #aba9a7;
+}
+
+fieldset{
+    border: none;
+}
+
+fieldset legend,
+.product-info h3{
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.filter-maker,
+.filter-group{
+    font-size: 14px;
+    line-height: 30px;
 }
