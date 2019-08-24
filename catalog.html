@@ -3,8 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>Барбершоп "Бородинский"</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
-    <body>
+    <body class="body-catalog">
          <header class="main-header">
             <nav class="main-navigation">
                 <a class="main-header-logo" href="index.html">
@@ -12,11 +15,11 @@
                     alt="Логотип Барбершопа 'Бородинский'">
                 </a>
                 <ul class="site-navigation">
-                    <li><a href="info.html">Информация</a></li>
-                    <li><a href="news.html">Новости</a></li>
-                    <li><a href="price.html">Прайс-лист</a></li>
+                    <li><a class="site-navigation-item" href="info.html">Информация</a></li>
+                    <li><a class="site-navigation-item" href="news.html">Новости</a></li>
+                    <li><a class="site-navigation-item" href="price.html">Прайс-лист</a></li>
                     <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a class="site-navigation-item" href="contacts.html">Контакты</a></li>
                 </ul>
                 <ul class="user-navigation">
                     <li class="login-link">
@@ -30,7 +33,6 @@
         </header>
         <main class="container">
             <h1 class="page-title">Средства по уходу</h1>
-            
             <ul class="breadcrumbs">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="catalog.html">Магазин</a></li>
@@ -38,12 +40,12 @@
             </ul>
             <section class="filters">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
-                <form class="filters" method="GET" action="https://echo.htmlacademy.ru">
+                <form method="GET" action="https://echo.htmlacademy.ru">
                     <fieldset>
                         <legend>Производители:</legend>
-                        <ul>
+                        <ul class="filter-maker">
                             <li class="filter-option">
-                                <label>
+                                <label class="filter-input">
                                     <input class="visually-hidden filter-input filter-input-checkbox" 
                                     type="checkbox" name="baxter-of-california">
                                     Baxter of california
@@ -89,7 +91,7 @@
                     </fieldset>
                     <fieldset>
                         <legend>Группы товаров:</legend>
-                        <ul>
+                        <ul class="filter-group">
                             <li class="filter-option">
                                 <input class="visually-hidden filter-input filter-input-radio"
                                  type="radio" name="product-group" id="filters-shaving" value="shaving">
@@ -115,7 +117,7 @@
                 <h2 class="visually-hidden">Список средств для ухода за кожей</h2>
                 <ul class="catalog-list">
                     <li class="catalog-item">
-                        <a href="catalog-item.html">
+                        <a class="catalog-name-product" href="catalog-item.html">
                             <h3>
                                 <span class="catalog-category">Набор для путешествий</span>
                                 <span class="catalog-item-title">"BAXTER OF CALIFORNIA"</span>
@@ -127,12 +129,12 @@
                         </a>
                         <!-- Знак рубля в html &#8381 -->
                         <p class="catalog-item-price">
-                            <b>2 900 &#8381</b>
+                            <b>2 900 &#8381;</b>
                             <a class="button" href="#">Купить</a>
                         </p>
                     </li>
                     <li class="catalog-item">
-                        <a href="catalog-item.html">
+                        <a class="catalog-name-product" href="catalog-item.html">
                             <h3>
                                 <span class="catalog-category">Увлажняющий</span>
                                 <span class="catalog-item-title">"BAXTER OF CALIFORNIA"</span>
@@ -144,12 +146,12 @@
                         </a>
                         <!-- Знак рубля в html &#8381 -->
                         <p class="catalog-item-price">
-                            <b>750 &#8381</b>
+                            <b>750 &#8381;</b>
                             <a class="button" href="#">Купить</a>
                         </p>
                     </li>
                     <li class="catalog-item">
-                        <a href="catalog-item.html">
+                        <a class="catalog-name-product" href="catalog-item.html">
                             <h3>
                                 <span class="catalog-category">Гель для волос</span>
                                 <span class="catalog-item-title">"SUAVECITO"</span>
@@ -161,12 +163,12 @@
                         </a>
                         <!-- Знак рубля в html &#8381 -->
                         <p class="catalog-item-price">
-                            <b>290 &#8381</b>
+                            <b>290 &#8381;</b>
                             <a class="button" href="#">Купить</a>
                         </p>
                     </li>
                     <li class="catalog-item">
-                        <a href="catalog-item.html">
+                        <a class="catalog-name-product" href="catalog-item.html">
                             <h3>
                                 <span class="catalog-category">Глина для укладки</span>
                                 <span class="catalog-item-title">"AMERICAN CREW"</span>
@@ -178,12 +180,12 @@
                         </a>
                         <!-- Знак рубля в html &#8381 -->
                         <p class="catalog-item-price">
-                            <b>500 &#8381</b>
+                            <b>500 &#8381;</b>
                             <a class="button" href="#">Купить</a>
                         </p>
                     </li>
                     <li class="catalog-item">
-                        <a href="catalog-item.html">
+                        <a class="catalog-name-product" href="catalog-item.html">
                             <h3>
                                 <span class="catalog-category">Глина для волос</span>
                                 <span class="catalog-item-title">"AMERICAN CREW"</span>
@@ -196,12 +198,12 @@
                         </a>
                         <!-- Знак рубля в html &#8381 -->
                         <p class="catalog-item-price">
-                            <b>300 &#8381</b>
+                            <b>300 &#8381;</b>
                             <a class="button" href="#">Купить</a>
                         </p>
                     </li>
                     <li class="catalog-item">
-                        <a href="catalog-item.html">
+                        <a class="catalog-name-product" href="catalog-item.html">
                             <h3>
                                 <span class="catalog-category">Набор для бритья</span>
                                 <span class="catalog-item-title">"BAXTER OF CALIFORNIA"</span>
@@ -213,16 +215,16 @@
                          </a>
                         <!-- Знак рубля в html &#8381 -->
                         <p class="catalog-item-price">
-                            <b>3 900 &#8381</b>
+                            <b>3 900 &#8381;</b>
                             <a class="button" href="#">Купить</a>
                         </p>
                     </li>
                 </ul>
                 <ul class="pagination-list">
-                    <li class="pagination-item"><a href="#">1</a></li>
-                    <li class="pagination-item pagination-item-current"><a>2</a></li>
-                    <li class="pagination-item"><a href="#">3</a></li>
-                    <li class="pagination-item"><a href="#">4</a></li>
+                    <li><a class="button" href="#">1</a></li>
+                    <li><a class="button button-active">2</a></li>
+                    <li><a class="button" href="#">3</a></li>
+                    <li><a class="button" href="#">4</a></li>
                 </ul>
 
             </section>
@@ -260,7 +262,7 @@
                     <input class="login-icon-password" id="login-password" type="password" name="password" placeholder="Пароль">
                 </p>
                 <p class="login-password-info">
-                    <label for="login-password-info">
+                    <label class="login-checkbox">
                         <input type="checkbox" name="remember" class="visually-hidden" id="login-password-info">
                         <span class="checkbox-indicator"></span> 
                         Запомни меня
