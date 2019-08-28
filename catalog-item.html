@@ -10,25 +10,29 @@
     <body class="body-catalog-item">
         <header class="main-header">
             <nav class="main-navigation">
-                <a class="main-header-logo" href="index.html">
-                    <img src="img/logo.svg" width="111" height="24"
-                    alt="Логотип Барбершопа 'Бородинский'">
-                </a>
-                <ul class="site-navigation">
-                    <li><a href="info.html">Информация</a></li>
-                    <li><a href="news.html">Новости</a></li>
-                    <li><a href="price.html">Прайс-лист</a></li>
-                    <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
-                </ul>
-                <ul class="user-navigation">
-                    <li>
-                        <a class="login-link">
-                            Вход
-                            <img src="img/login.svg"  alt="Иконка входа">
+                <div class="main-navigation-wrapper">
+                    <div class="container">
+                        <a class="header-logo" href="index.html">
+                            <img src="img/logo.svg" width="111" height="24"
+                            alt="Логотип Барбершопа 'Бородинский'">
                         </a>
-                    </li>
-                </ul>
+                        <ul class="site-navigation">
+                            <li><a href="info.html">Информация</a></li>
+                            <li><a href="news.html">Новости</a></li>
+                            <li><a href="price.html">Прайс-лист</a></li>
+                            <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                        <ul class="user-navigation">
+                            <li>
+                                <a class="login-link">
+                                    Вход
+                                    <img src="img/login.svg"  alt="Иконка входа">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
         <main class="container">
@@ -39,77 +43,81 @@
                 <li><a href="#">Средства для ухода</a></li>
                 <li class="breadcrumbs-current">Набор для путешествий «BAXTER OF CALIFORNIA»</li>
             </ul>
-            <section class="product-photos">
-                <h2 class="visually-hidden">Изображение товара</h2>
-                <p class="product-photo-full">
-                    <img src="img/product-big.jpg" width="469" height="498" alt
-                    ="Фото всего наборв">
-                </p>
-                <ul class="product-photo-preview">
-                <li><img src="img/product-small-1.jpg" width="149" height="149" alt
-                ="Фото в анфас"></li>
-                <li><img src="img/product-small-2.jpg" width="149" height="149" alt
-                ="Фото в профиль"></li>
-                <li><img src="img/product-small-3.jpg" width="149" height="149" alt
-                ="Фото отдельной части"></li>
-                </ul>
-            </section>
-            <section class="product-info">
-                <h2 class="visually-hidden">Описание товара</h2>
-                <p class="product-availability">Есть в наличии</p>
-                <p class="product-article">АРТИКУЛ:DEXTER-AE</p>
-                <p class="product-text">
-                    Travel Kit – необходимый аксессуар во время любого путешествия. 
-                    В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей 
-                    во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, 
-                    крем для бритья, крем после бритья, шампунь. Набор также может стать отличным 
-                    подарком.</p>
-
-                <p class="catalog-item-price">
-                    <b>2 900 &#8381</b>
-                    <a class="button" href="#">Купить</a>
-                </p>
-                <h3>В набор входят:</h3>
-                    <ul>
-                        <li>Средство для умывания (50 мл)</li>
-                        <li>Увлажняющий крем (50 мл)</li>
-                        <li>Крем для бритья (50 мл)</li>
-                        <li>Крем после бритья, шампунь (50 мл)</li>
-                        <li>Удобная кожная косметика</li>
+            <div class="catalog-columns">
+                <section class="product-photos">
+                    <h2 class="visually-hidden">Изображение товара</h2>
+                    <p class="product-photo-full">
+                        <img src="img/product-big.jpg" width="469" height="498" alt
+                        ="Фото всего наборв">
+                    </p>
+                    <ul class="product-photo-preview">
+                    <li><img src="img/product-small-1.jpg" width="149" height="149" alt
+                    ="Фото в анфас"></li>
+                    <li><img src="img/product-small-2.jpg" width="149" height="149" alt
+                    ="Фото в профиль"></li>
+                    <li><img src="img/product-small-3.jpg" width="149" height="149" alt
+                    ="Фото отдельной части"></li>
                     </ul>
+                </section>
+                <section class="product-info">
+                    <h2 class="visually-hidden">Описание товара</h2>
+                    <p class="product-availability">Есть в наличии</p>
+                    <p class="product-article">АРТИКУЛ:DEXTER-AE</p>
+                    <p class="product-text">
+                        Travel Kit – необходимый аксессуар во время любого путешествия. 
+                        В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей 
+                        во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, 
+                        крем для бритья, крем после бритья, шампунь. Набор также может стать отличным 
+                        подарком.</p>
+
+                    <p class="catalog-item-price">
+                        <b>2 900 &#8381</b>
+                        <a class="button" href="#">Купить</a>
+                    </p>
+                    <h3>В набор входят:</h3>
+                        <ul>
+                            <li>Средство для умывания (50 мл)</li>
+                            <li>Увлажняющий крем (50 мл)</li>
+                            <li>Крем для бритья (50 мл)</li>
+                            <li>Крем после бритья, шампунь (50 мл)</li>
+                            <li>Удобная кожная косметика</li>
+                        </ul>
+                </div>
             </section>
         </main>
         <footer class="main-footer">
-            <p>
-                Барбершоп "Бородинский"<br>
-                Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-                Как нас найти?<br>
-                Телефон: +7 (495) 666-02-66
-            </p>
-            <div class="footer-social">
-                <b>Давай дружить!</b>
-                <ul>
-                    <li>
-                        <a class="social-button" href="https://vk.com">
-                            <img src="img/vk.svg" alt="Иконка вконтакте">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="social-button" href="https://facebook.com">
-                            <img src="img/facebook.svg" alt="Иконка фейсбука">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="social-button" href="https://instagram.com" aria-label="Инстаграм">
-                            <img  src="img/instagram.svg" alt="Иконка инстаграмма">
-                        </a>
-                    </li>
-                </ul>
+            <div class="container">
+                <p>
+                    Барбершоп "Бородинский"<br>
+                    Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+                    Как нас найти?<br>
+                    Телефон: +7 (495) 666-02-66
+                </p>
+                <div class="footer-social">
+                    <b>Давай дружить!</b>
+                    <ul>
+                        <li>
+                            <a class="social-button" href="https://vk.com">
+                                <img src="img/vk.svg" alt="Иконка вконтакте">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-button" href="https://facebook.com">
+                                <img src="img/facebook.svg" alt="Иконка фейсбука">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-button" href="https://instagram.com" aria-label="Инстаграм">
+                                <img  src="img/instagram.svg" alt="Иконка инстаграмма">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="footer-copyright">
+                    <b>Разработано</b>
+                    <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+                </p>
             </div>
-            <p class="footer-copyright">
-                <b>Разработано</b>
-                <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-            </p>
         </footer>
         <section class="modal modal-login">
             <h2>Личный кабинет</h2>
