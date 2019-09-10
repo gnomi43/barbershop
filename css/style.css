@@ -200,6 +200,27 @@ input[type="radio"].visually-hidden{
     padding-left: 50px;
 }
 
+.site-navigation-current{
+    position: relative;
+}
+
+.site-navigation-current a:not([href]){
+    background-color: #000000;
+}
+
+.site-navigation-current::after{
+    content: "";
+
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    left: 20px;
+
+    height: 5px;
+
+    background-color: #ffffff;
+}
+
 .login-link::before{
     content: "";
 
