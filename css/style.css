@@ -571,32 +571,61 @@ input[type="radio"].visually-hidden{
     background-color: #ffffff;
 }
 
-.modal{
-    color: #000000;
-
-    background-color: #f8f5f2;
-    background-image: url("../img/bg-columns.jpg");
-    background-position: 0 0;
-    background-repeat: repeat;
-}
-
-.modal h2{
-    font-size: 30px;
-    line-height: 42px;
-}
-
-.login-icon-user,
-.login-icon-password{
-    font: inherit;
-    color: #000000;
-    text-transform: uppercase;
-
-    background-color: transparent;
-    border: 2px solid #000000;
-}
-
 .login-form input:focus{
     border-color: #663d15;
+}
+
+.login-password-info{
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+}
+
+.login-checkbox{
+    position: relative;
+
+    padding-left: 30px;
+
+    cursor: pointer;
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 17px;
+    height: 17px;
+
+    border: 2px solid black;
+}
+
+.login-checkbox input[type="checkbox"]:focus + .checkbox-indicator{
+    border-color: #663d15;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after{
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    left: 1px;
+
+    width: 15px;
+    height: 2px;
+
+    background-color: #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before{
+    transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after{
+    transform: rotate(-45deg);
 }
 
 .login-checkbox:hover,
@@ -612,6 +641,11 @@ input[type="radio"].visually-hidden{
 .restore:hover,
 .restore:focus{
     text-decoration: none;
+}
+
+.login-form .button{
+    width: 100%;
+    margin-right: 0;
 }
 
 main ul{
@@ -917,4 +951,141 @@ fieldset legend,
 .filter-group{
     font-size: 14px;
     line-height: 30px;
+}
+
+.modal{
+    position: fixed;
+    
+    color: #000000;
+
+    display: none;
+
+    background-color: #f8f5f2;
+    background-image: url("../img/bg-columns.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+    z-index: 5;
+}
+
+.modal h2{
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.modal-login{
+    top: 120px;
+    left: 50%;
+    margin-left: -230px;
+
+    width: 300px;
+    padding: 50px 80px;
+}
+
+.modal-map{
+    top: 50%;
+    left: 50%;
+
+    width: 766px;
+    height: 561px;
+    margin-top: -280px;
+    margin-left: -390px;
+
+    border: 7px solid white;
+}
+
+.modal-map p{
+    margin: 0;
+}
+
+.modal-close{
+    position: absolute;
+    top: 0;
+    right: -34px;
+
+    width: 22px;
+    height: 22px;
+
+    font-size: 0;
+
+    background-color: transparent;
+    border: 0;
+
+    cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after{
+    content: "";
+
+    position: absolute;
+    top: 4px;
+    left: 00px;
+
+    width: 20px;
+    height: 3px;
+
+    background-color: #d0d0d0;
+}
+
+.modal-close::before{
+    transform: rotate(45deg);
+}
+
+.modal-close::after{
+    transform: rotate(-45deg);
+}
+
+.modal-description{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.login-form p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"]{
+    box-sizing: border-box;
+    width: 300px;
+    padding: 10px 15px;
+    padding-right: 40px;
+    
+    font: inherit;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    border: 2px solid #000000;
+}
+
+.login-icon-user{
+    background-image: url("../img/user.svg");
+    background-position: 270px center;
+    background-repeat: no-repeat;
+}
+
+.login-icon-password{
+    background-image: url("../img/lock.svg");
+    background-position: 270px center;
+    background-repeat: no-repeat;
+}
+
+.modal-overlay{
+    position: fixed;
+    display: none;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
 }
